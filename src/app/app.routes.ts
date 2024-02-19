@@ -2,5 +2,6 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './shared/components/layout/layout.component';
 
 export const routes: Routes = [
-  { path: '', component: LayoutComponent, pathMatch: 'full' },
+  { path: 'dashboard', component: LayoutComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
