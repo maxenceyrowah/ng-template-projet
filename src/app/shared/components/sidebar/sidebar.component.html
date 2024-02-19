@@ -1,0 +1,11 @@
+<!-- Sidebar -->
+<nav class="hidden md:flex md:flex-shrink-0">
+  <!-- Ajoutez le contenu de la barre latérale ici -->
+  <ul class="flex flex-col">
+    <li *ngFor="let item of items">
+      <a routerLink="{{item.link}}">
+        {{ item.label }}
+      </a>
+    </li>
+  </ul>
+</nav>
